@@ -1,0 +1,19 @@
+name: ItemTrackerPro
+version: '1.0.0'
+main: com.itemtrackerpro.ItemTrackerPro
+api-version: '1.21'
+author: ItemTrackerPro Team
+description: Tracks item sources, movement, and player actions for server economy auditing.
+
+commands:
+  itemtracker:
+    description: Opens the ItemTracker Pro management GUI
+    usage: /itemtracker
+    aliases: [itp, itemtrackerpro]
+    permission: itemtrackerpro.admin
+    permission-message: "§cYou do not have permission to use ItemTracker Pro."
+
+permissions:
+  itemtrackerpro.admin:
+    description: Full access to ItemTracker Pro commands and data
+    default: op
